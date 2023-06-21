@@ -1,0 +1,30 @@
+class Alumno:
+
+
+    def datos(self,nombre,notafinal):
+        self.nombre = nombre
+        self.notafinal = notafinal
+    
+    
+    def registro(self):
+        print('Nombre del Alumno: ',self.nombre)
+        print('Nota final: ',self.notafinal)
+
+    def resultadofinal(self):
+        if self.notafinal // 2 >= 5:
+            print('Aprovado')
+        else:
+            print('Suspendido')
+
+a1 = Alumno()
+a2 = Alumno()
+
+a1.datos("Yole",20)
+a2.datos("Iliev",8)
+
+
+
+a1.registro()
+a1.resultadofinal()
+a2.registro()
+a2.resultadofinal()
