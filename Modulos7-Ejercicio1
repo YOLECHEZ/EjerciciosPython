@@ -1,0 +1,13 @@
+import operaciones
+
+
+def main():
+    resSuma = operaciones.suma(30,40)
+    resResta = operaciones.resta(80,70)
+    resMulti = operaciones.multiplicar(5, 50)
+    restDivi = operaciones.dividir(400,8)
+
+    print("Los resultados son:",resSuma,resResta,resMulti,restDivi)
+
+if __name__ == '__main__':
+    main()
