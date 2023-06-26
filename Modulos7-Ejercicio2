@@ -1,0 +1,12 @@
+import datetime
+
+tiempo = datetime.datetime.now()
+
+print("{}:{}:{}".format(tiempo.hour, tiempo.minute, tiempo.second))
+
+if int(tiempo.hour) >= 19:
+    print("Es la hora de ir a casa")
+
+else:
+    print("Falta {} horas {} minutos y {} segundos para salir".
+          format(18- int(tiempo.hour), 59- int(tiempo.minute),59- int(tiempo.second)))
