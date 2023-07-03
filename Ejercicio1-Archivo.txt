@@ -1,0 +1,4 @@
+f = open('NuevoFichero.txt', 'a')
+f.write('primer texto\n')
+f.write('segundo texto\n')
+f.close()
