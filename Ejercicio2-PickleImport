@@ -1,0 +1,24 @@
+import pickle
+class Vehiculo:
+    modelo = ""
+    clase = ""
+    color = ""
+    serie = ""
+
+    def __init__(self, modelo, clase, color, serie):
+        self.modelo = modelo
+        self.clase = clase
+        self.color = color
+        self.serie = serie
+
+    def getModelo(self):
+        return self.modelo
+
+f = open('datos.bin','rb')
+ford = pickle.load(f)
+
+
+
+print(ford.getModelo(),'clase:', ford.clase)
+
+f.close()
