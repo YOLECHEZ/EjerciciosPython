@@ -1,0 +1,13 @@
+entrada = input("Ingresa una lista de países separados por comas:\n ")
+
+paises = entrada.split(',')
+
+paises = [pais.strip() for pais in paises]
+
+paises = list(set(paises))
+
+paises.sort()
+
+output = ", ".join(paises)
+
+print(f"Lista de países ordenados alfabéticamente: {output}")
